@@ -31,4 +31,6 @@ curl -X PUT -H "Content-Type: application/json" \
 http://localhost:8080/api/product/update/2
 ```
 #### Delete product
+```
 curl -X DELETE http://localhost:8080/api/product/delete/1
+```
