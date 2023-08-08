@@ -1,0 +1,39 @@
+version: "3.9"
+
+networks:
+  maven-app-network:
+    driver: host
+  maven-app-network-expose-app:
+    driver: bridge
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ngochung1809/maven-project-app
+    networks:
+      - maven-app-network
+      - maven-app-network-expose-app
+    environment:
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=Ngochung1809!
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/maven-project?useSSL=false&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.cj.jdbc.Driver
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
+      - SPRING_JPA_SHOW_SQL=true
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+  db:
+    image: mysql:8.1.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=Ngochung1809!
+      - MYSQL_DATABASE=maven-project
+    networks:
+      - maven-app-network
+    # volumes:
+    #   - maven-app-volume:/var/lib/mysql
+    ports:
+      - "3306:3306"
