@@ -1,4 +1,4 @@
-package com.example.deploymavenproject.exception;
+package com.vn.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

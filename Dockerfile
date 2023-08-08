@@ -6,7 +6,7 @@ RUN mvn clean package
 # Run Project
 FROM openjdk:17-oracle
 WORKDIR /app
-COPY --from=build-maven /build/target/Deploy-Maven-Project.jar ./run.jar
+COPY --from=build-maven /build/target/product-service.jar ./run.jar
 EXPOSE 8080
 # Switch user
 RUN groupadd -r ngochung1809 && \

@@ -1,10 +1,10 @@
-package com.example.deploymavenproject.service.Impl;
+package com.vn.service.Impl;
 
-import com.example.deploymavenproject.entity.Product;
-import com.example.deploymavenproject.repository.ProductRepository;
-import com.example.deploymavenproject.request.ProductRequest;
-import com.example.deploymavenproject.response.ProductResponse;
-import com.example.deploymavenproject.service.ProductService;
+import com.vn.entity.Product;
+import com.vn.repository.ProductRepository;
+import com.vn.request.ProductRequest;
+import com.vn.response.ProductResponse;
+import com.vn.service.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

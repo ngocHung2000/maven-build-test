@@ -1,4 +1,4 @@
-package com.example.deploymavenproject.response;
+package com.vn.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

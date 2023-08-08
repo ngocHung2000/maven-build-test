@@ -1,6 +1,6 @@
-package com.example.deploymavenproject.repository;
+package com.vn.repository;
 
-import com.example.deploymavenproject.entity.Product;
+import com.vn.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

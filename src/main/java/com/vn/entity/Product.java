@@ -1,4 +1,4 @@
-package com.example.deploymavenproject.entity;
+package com.vn.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

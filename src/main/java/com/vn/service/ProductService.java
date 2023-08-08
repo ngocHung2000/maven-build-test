@@ -1,7 +1,7 @@
-package com.example.deploymavenproject.service;
+package com.vn.service;
 
-import com.example.deploymavenproject.request.ProductRequest;
-import com.example.deploymavenproject.response.ProductResponse;
+import com.vn.request.ProductRequest;
+import com.vn.response.ProductResponse;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;

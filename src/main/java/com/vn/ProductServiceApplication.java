@@ -1,7 +1,7 @@
-package com.example.deploymavenproject;
+package com.vn;
 
-import com.example.deploymavenproject.entity.Product;
-import com.example.deploymavenproject.repository.ProductRepository;
+import com.vn.entity.Product;
+import com.vn.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -12,10 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
-public class DeployMavenProjectApplication implements CommandLineRunner {
+public class ProductServiceApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
-        SpringApplication.run(DeployMavenProjectApplication.class, args);
+        SpringApplication.run(ProductServiceApplication.class, args);
     }
 
     @Autowired

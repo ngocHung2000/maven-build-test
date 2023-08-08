@@ -1,8 +1,8 @@
-package com.example.deploymavenproject.controller;
+package com.vn.controller;
 
-import com.example.deploymavenproject.request.ProductRequest;
-import com.example.deploymavenproject.response.ProductResponse;
-import com.example.deploymavenproject.service.ProductService;
+import com.vn.request.ProductRequest;
+import com.vn.response.ProductResponse;
+import com.vn.service.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
