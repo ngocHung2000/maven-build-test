@@ -4,6 +4,7 @@ WORKDIR /build
 COPY . .
 RUN mvn clean package
 # Run Project
+
 FROM openjdk:17-oracle
 WORKDIR /app
 COPY --from=build-maven /build/target/product-service.jar ./run.jar
