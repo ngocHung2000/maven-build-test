@@ -6,10 +6,10 @@ networks:
 
 services:
   api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: ngochung1809/maven-project-app
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: ngochung1809/maven-project-app:v1
     networks:
       - maven-app-network
     environment:
